@@ -14,7 +14,7 @@ router.get('/user', (req, res) => {
 
 // GET SINGLE TEAM
 router.get('/ground_display', (req, res) => {
-  User.findOne({ team: '1' }, (err, user) => {
+  User.find({}, (err, user) => {
     if (err) return res.status(500).send({ error: 'database failure' });
     if (!user) return res.status(404).json({ error: 'team not found' });
     return res.json(user);
