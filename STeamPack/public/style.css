@@ -1,0 +1,21 @@
+.ground {
+	text-align: center;
+}
+
+.away-field {
+	border: 1px solid red;
+	height: 350px;
+}
+
+.home-field {
+	border: 1px solid red;
+	height: 350px;
+}
+
+.player {
+	border: 1px solid black;
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	font-size: 2em;
+}
